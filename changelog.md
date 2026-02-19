@@ -1,4 +1,27 @@
-# Changelog v1.8.0
+# Changelog
+
+All notable changes to the Cinema Lobby App are documented here.  
+Format based on [Keep a Changelog](https://keepachangelog.com/).
+
+## [2.0.0] - 2026-02-20
+
+### Added
+- **Major Architecture Upgrade**: Full version 2.0.0 release with optimized background sync and modular database structure.
+- **Enhanced Activity Log Sync**: Your full machine activity history (actions, staff names, and setting changes) now syncs across all devices via Google Drive for unified multi-device management.
+- **Service Report Updates**: All status changes and notes in service reports are now tracked and synced for complete maintenance history.
+- **Tactical Splash Screen**: Integrated a high-fidelity "Initialize System" dashboard for a premium, futuristic launch experience.
+- **Glowing App Icon**: Refined brand identity with a high-contrast glowing blue robotic arm logo.
+- **Smart Session Management**: Enhanced Google login to automatically refresh your session, reducing the need to sign in repeatedly.
+- **Connection Status**: Added a visual status indicator in Settings to show your current connection health.
+- **Inventory Audit**: Inventory updates now track and log exact quantity changes (previous vs. new) for better history tracking.
+- **Image Organization**: Photos are now automatically sorted into specific folders (Inventory, Machine Photos, Reports) in Google Drive.
+
+### Fixed
+- **Android Splash Fix**: Resolved issues where the splash screen appeared too small on high-density Android displays.
+- **Build Optimization**: Drastically reduced APK size through R8 minification and architecture-specific filtering.
+- **Splash Persistence**: Resolved native caching issues to ensure the new branding appears immediately.
+- **Data Validation**: Added checks to prevent accidental entry of invalid inventory quantities.
+- **Sync Reliability**: Improved image synchronization to ensure files are routed to their correct destinations.
 
 ## [1.8.0] - 2026-02-19
 
@@ -12,97 +35,81 @@
 - **Build Optimization**: Drastically reduced APK size by over 60% through R8 minification and architecture-specific filtering.
 - **Splash Persistence**: Fixed an issue where the old splash screen would linger in native caches on iOS.
 
-# Changelog v1.7.0
-
 ## [1.7.0] - 2026-02-19
-
-### Changes
-- Premium Branding Release: New cinematic tactical splash screen and refined glowing blue claw app icon. Full dark theme integration.
-
-# Changelog v1.6.0
+### Added
+- **Final Premium Branding**: Integrated the cinematic "Tactical Dashboard" splash screen and the refined "Glowing Blue Claw" app icon.
+- **Improved Launch Experience**: Optimized splash screen for all device sizes with a solid dark theme (#0A111A).
 
 ## [1.6.0] - 2026-02-19
-
 ### Added
-- **Enhanced Chart Tooltips**: Tap any chart point to see Plays, Revenue, and Wins for that specific day — all in one elegant card.
+- **Enhanced Chart Tooltips**: Tap any chart point to see Plays, Revenue, and Wins for that day. 
 - **"What's New" Modal**: After each update, see a beautiful summary of what's been added and improved.
 - **Full Version History**: Comprehensive changelog now maintained with every release.
-
-# Changelog v1.5.0
 
 ## [1.5.0] - 2026-02-19
 
 ### Added
-- **Machine Selection Shortcuts**: Update settings or submit records with the machine auto-selected from the details page.
-- **Improved Settings Flow**: New safety warnings when changing items and helpful "upcoming item" suggestions.
-- **Enhanced Activity History**: Tap any log entry to view full details and metadata.
-- **Searchable Logs**: Find events quickly with the new search bar.
-- **Flexible Dashboard**: New date filters for revenue and plays (7D, 14D, 30D, and All Time).
+- **Machine Selection Shortcuts** — Deep-link from machine detail to submit settings / play record with auto-selection.
+- **Change Item with Warning** — "Change" button on machine prize card with confirmation alert before navigating to setup form.
+- **Upcoming Inventory Suggestion** — Banner in settings form to quick-assign the upcoming item configured for the machine.
+- **Activity Log Detail View** — Expandable log entries showing full metadata, timestamps, and parsed detail JSON.
+- **Activity Log Search** — Debounced search bar filtering by action, staff name, and type.
+- **Dashboard Date Range Chips** — 7D / 14D / 30D / All filter for revenue, plays, and per-machine breakdowns.
+- **Enhanced Chart Tooltips** — Tapping a chart point shows Plays, Revenue, and Wins for that specific day.
+- **"What's New" Modal** — In-app overlay highlights new features after each update.
 
-### Fixed
-- **Metric Accuracy**: Ensured all dashboard charts accurately reflect the selected time period.
-
-# Changelog v1.4.0
+### Verified (Already Implemented)
+- Negative inventory option (#8)
+- Machine archive / restore (#10)
+- Service report status timeline (#23)
 
 ## [1.4.0] - 2026-02-19
 
 ### Added
-- **Smart History Browsing**: Increased history pagination to 50 records and added quick-select date range chips (7D, 30D).
-- **Animated Loading**: Added new animated skeleton screens to provide better visual feedback while loading history data.
-- **Image Preview**: Tapped images in history now open in a full-screen preview.
+- Smart history browsing with 50-record pagination and quick-select date range chips.
+- Animated skeleton loading screens for history views.
+- Full-screen image preview for history items.
 
 ### Fixed
-- **Drive Image Integration**: resolved issues where Google Drive sharing links would not always render correctly in the history tab.
-- **Inventory Consistency**: Fixed a bug where machine quantity displays could show stale data instead of live stock levels.
-- **Refined Alerts**: Improved the "Machine Attention" logic to reduce noise by requiring a minimum number of plays before flagging low payout.
-- **Service Report Reliability**: Added better error handling and empty-state feedback when starting new service reports.
-
-# Changelog v1.3.0
+- Google Drive sharing links now render correctly in history.
+- Machine quantity displays show live stock levels (COALESCE fix).
+- Machine attention alerts require minimum plays threshold.
+- Service report error handling and empty-state feedback.
 
 ## [1.3.0] - 2026-02-19
 
-### Changes
 ### Added
-- **Smart Session Management:** Enhanced Google login to automatically refresh your session, reducing the need to sign in repeatedly.
-- **Connection Status:** Added a visual status indicator in Settings to show your current connection health.
-- **Inventory Audit:** Inventory updates now track and log exact quantity changes (previous vs. new) for better history tracking.
-- **Image Organization:** Photos are now automatically sorted into specific folders (Inventory, Machine Photos, Reports) in Google Drive.
+- Smart session management with automatic refresh.
+- Connection status indicator in Settings.
+- Inventory audit trail (previous vs. new quantity tracking).
+- Automatic image folder organization on Google Drive.
 
 ### Fixed
-- **Data Validation:** Added checks to prevent accidental entry of invalid inventory quantities.
-- **Sync Reliability:** Improved image synchronization to ensure files are routed to their correct destinations.
-
-# Changelog v1.2.0
+- Data validation for inventory quantities.
+- Image sync routing reliability.
 
 ## [1.2.0] - 2026-02-19
 
-### Changes
-- Maintenance and stability improvements
-
-# Changelog v1.1.9
+### Changed
+- Maintenance and stability improvements.
 
 ## [1.1.9] - 2026-02-19
 
-### Changes
-- update
-
-# Changelog v1.1.8
+### Changed
+- General update and improvements.
 
 ## [1.1.8] - 2026-02-19
 
 ### Fixed
-- **Google Drive Sync:** Fixed image upload collision issues by ensuring unique filenames for new captures.
-- **Data Import:** Fixed bug where machine images were not being updated during fetch from Drive.
-- **Drive Image Formulas:** Improved detection of `=IMAGE()` formulas in spreadsheets for better cross-device sync.
-- **Sync Reliability:** Added protection for historical records during full sync on new devices.
-
-# Changelog v1.1.7
+- Google Drive image upload collision (unique filenames).
+- Machine image updates during Drive fetch.
+- `=IMAGE()` formula detection in spreadsheets.
+- Historical record protection during full sync on new devices.
 
 ## [1.1.7] - 2026-02-19
 
 ### Added
-- **Manual Update Check:** Added a "Check for Updates" button in the Settings page under App Info.
+- Manual "Check for Updates" button in Settings.
 
 ### Fixed
-- **Update Notifications:** Improved the update checking logic by adding a cache-busting timestamp to the version check URL.
-- **Testing:** Temporarily enabled update notifications for development builds to allow verification during testing.
+- Update notification cache-busting for version checks.
