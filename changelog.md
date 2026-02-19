@@ -1,3 +1,10 @@
+# Changelog v1.6.0
+
+## [1.6.0] - 2026-02-19
+
+### Changes
+- Enhanced Chart Tooltips: Tap any chart point to see Plays, Revenue, and Wins for that day. - What's New Modal: See a summary of new features after each update. - Changelog: Full version history now available in the app.
+
 # Changelog v1.5.0
 
 ## [1.5.0] - 2026-02-19
