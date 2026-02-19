@@ -1,3 +1,10 @@
+# Changelog v1.3.0
+
+## [1.3.0] - 2026-02-19
+
+### Changes
+Completion of Phase 2: Auth Expiry tracking, Inventory Audit Logs, and Structured Image Management.
+
 # Changelog v1.2.0
 
 ## [1.2.0] - 2026-02-19
