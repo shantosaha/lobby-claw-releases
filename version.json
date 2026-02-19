@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.7.0",
   "androidUrl": "https://raw.githubusercontent.com/shantosaha/lobby-claw-releases/main/lobby-claw.apk",
   "iosUrl": "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/shantosaha/lobby-claw-releases/main/manifest.plist",
   "forceUpdate": false
