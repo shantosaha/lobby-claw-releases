@@ -1,3 +1,11 @@
+# Changelog v2.0.1
+
+## [2.0.1] - 2026-02-20
+
+### Added
+- Fix Google Account Connection Issue
+
+
 # Changelog
 
 All notable changes to the Cinema Lobby App are documented here.  
