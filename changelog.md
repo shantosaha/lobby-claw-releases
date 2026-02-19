@@ -2,8 +2,11 @@
 
 ## [1.8.0] - 2026-02-19
 
-### Changes
-Added:
+### Added
+- **Activity Log Sync**: Your full machine activity history (actions, staff names, and setting changes) now syncs across all devices via Google Drive.
+- **Service Report Updates**: All status changes and notes in service reports are now tracked and synced for complete cross-device maintenance history.
+- **Tactical Splash Screen**: Integrated a high-fidelity "Initialize System" dashboard to create a premium, futuristic launch experience.
+- **Glowing App Icon**: Optimized the brand identity with a high-contrast glowing blue robotic arm logo.
 
 # Changelog v1.7.0
 
