@@ -4,6 +4,11 @@
 
 ### Changes
 - Improved history view with direct image support for Google Drive.
+- Increased history pagination to 50 records for smoother browsing.
+- Added animated loading screens for better performance feedback.
+- Ensured inventory counts are always accurate by using live data.
+- Improved reliability of service reports and dashboard alerts.
+- Added quick-select date ranges (7 days, 30 days) to the history filter.
 
 # Changelog v1.3.0
 
