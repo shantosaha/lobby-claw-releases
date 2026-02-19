@@ -1,6 +1,14 @@
+# Changelog v2.0.2
+
+## [2.0.2] - 2026-02-20
+
+### Added
+- Automated Version Bumping in release scripts.
+- Standardized changelog synchronization across repositories.
+
 # Changelog v2.0.1
 
-## [2.0.1] - 2026-02-20
+## [2.0.2] - 2026-02-20
 
 ### Added
 - Dedicated redirect handler for Google Authentication
