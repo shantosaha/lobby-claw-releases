@@ -8,6 +8,10 @@
 - **Tactical Splash Screen**: Integrated a high-fidelity "Initialize System" dashboard to create a premium, futuristic launch experience.
 - **Glowing App Icon**: Optimized the brand identity with a high-contrast glowing blue robotic arm logo.
 
+### Fixed
+- **Build Optimization**: Drastically reduced APK size by over 60% through R8 minification and architecture-specific filtering.
+- **Splash Persistence**: Fixed an issue where the old splash screen would linger in native caches on iOS.
+
 # Changelog v1.7.0
 
 ## [1.7.0] - 2026-02-19
