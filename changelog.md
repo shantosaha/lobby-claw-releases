@@ -1,11 +1,16 @@
-# Changelog v1.1.4
+# Changelog v1.1.5
 
-## [1.1.4] - 2026-02-19
+## [1.1.5] - 2026-02-19
 
 ### Fixed
-- **Android Google Auth:** Resolved the "Something went wrong" error (stuck at `auth.expo.io`) by implementing a native redirect scheme (`lobbyclawapp://`).
-- Bypassed the Expo Auth Proxy for more reliable native authentication.
+- **Reverted broken Auth redirect:** Removed the custom `redirectUri` (`lobbyclawapp:///`) that caused `Error 400: invalid_request` on both iOS and Android.
+- **Restored iOS Google Auth:** iOS login flow is working again (same behavior as v1.1.3).
 
 ### Technical
-- Updated `googleSyncService.ts` to use `expo-linking` for explicit `redirectUri` generation.
-- Incremented `versionCode` for Android release.
+- The `expo-auth-session/providers/google` library handles native redirects automatically:
+  - iOS: Uses the reversed `iosClientId` as the redirect scheme.
+  - Android: Uses the package signature (SHA-1) with the `androidClientId`.
+- Added detailed comments explaining why a custom `redirectUri` must NOT be set.
+
+### Notes
+- The original Android auth issue (stuck at `auth.expo.io`) is still present and will be investigated separately. The root cause is likely a missing or incorrect SHA-1 fingerprint for the Android Client ID in the Google Cloud Console.
