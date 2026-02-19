@@ -1,3 +1,10 @@
+# Changelog v1.4.0
+
+## [1.4.0] - 2026-02-19
+
+### Changes
+- Improved history view with direct image support for Google Drive.
+
 # Changelog v1.3.0
 
 ## [1.3.0] - 2026-02-19
