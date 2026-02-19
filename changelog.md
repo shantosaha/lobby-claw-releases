@@ -3,30 +3,15 @@
 ## [1.3.0] - 2026-02-19
 
 ### Changes
-- **Auth Expiry & Auto-Refresh:**
-  - Added token expiry tracking and optional refresh token storage in SecureStore.
-  - Implemented auto-refresh logic in `getToken()` for tokens expiring < 5 mins.
-  - Added visual Auth Status indicator in Settings (valid/expired/refreshing).
-  - Backend now handles Google OAuth refresh tokens properly.
+### Added
+- **Smart Session Management:** Enhanced Google login to automatically refresh your session, reducing the need to sign in repeatedly.
+- **Connection Status:** Added a visual status indicator in Settings to show your current connection health.
+- **Inventory Audit:** Inventory updates now track and log exact quantity changes (previous vs. new) for better history tracking.
+- **Image Organization:** Photos are now automatically sorted into specific folders (Inventory, Machine Photos, Reports) in Google Drive.
 
-- **Inventory DB Update Pipeline:**
-  - Enhanced `updateInventoryItem` and `incrementInventoryQuantity` to log **before/after quantities** for full audit trails.
-  - Added input validation for quantity updates (prevents NaN, warns on negative).
-  - Confirmed atomic transactions for all inventory modifications.
-
-- **Image Management & Drive Folders:**
-  - Implemented structured Google Drive folders:
-    - `Inventory/`
-    - `Machine_Photos/`
-    - `Service_Reports/`
-    - `Meter_Readings/`
-  - Added `generateImageFilename` for metadata-based naming (`type_machineId_timestamp.jpg`).
-  - Updated sync logic to route images to correct subfolders based on context.
-  - Added `Image Folder` column to inventory sync data for better tracking.
-
-- **Planning:**
-  - Completed Phase 2: Foundation.
-  - Updated project state to Phase 3.
+### Fixed
+- **Data Validation:** Added checks to prevent accidental entry of invalid inventory quantities.
+- **Sync Reliability:** Improved image synchronization to ensure files are routed to their correct destinations.
 
 # Changelog v1.2.0
 
