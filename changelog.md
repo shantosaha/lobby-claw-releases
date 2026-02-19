@@ -3,6 +3,31 @@
 ## [2.0.1] - 2026-02-20
 
 ### Added
+- Dedicated redirect handler for Google Authentication
+- "What's New" release highlights for v2.0.1
+- Archival support for mock data in mockData.ts
+
+### Fixed
+- Android Google Auth redirect
+- Data persistence issue where mock data reappeared
+- "Clear All Data" button immediately refreshing UI
+- "This screen doesn't exist" error during OAuth
+
+### Updated
+- Global app state management to prioritize user data over sample data
+- Transitioned seeder to non-functional stub (archived to separate file)
+- Refined dashboard navigation after data wipes
+
+### Removed
+- Automatic seeding of mock data on app startup
+- Overwriting of local database with sample data during initialization
+
+
+# Changelog v2.0.1
+
+## [2.0.1] - 2026-02-20
+
+### Added
 - Fix Google Account Connection Issue
 
 
