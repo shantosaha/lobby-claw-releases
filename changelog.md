@@ -1,3 +1,23 @@
+# Changelog v3.0.7
+
+## [3.0.7] - 2026-02-24
+
+### Added
+- Consistent data indicators (dots) on all calendar pickers
+- Data availability highlighting in Service History and Submit History tabs
+
+### Fixed
+- Calendar indicator alignment for ISO date strings
+
+### Updated
+- y
+- y
+- Calendar Enhancement Patch
+- calendar-outline
+- Calendar Indicators
+- Dates with data are now visually marked with dots across the app.
+
+
 # Changelog v3.0.6
 
 ## [3.0.6] - 2026-02-24
